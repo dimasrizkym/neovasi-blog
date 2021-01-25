@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
 
 // color
-$red-primary: #FF2946;
+$red1: #FF2946;
 $red-secondary: #ff3a54;
 $black1: #343434;   // h1
-$black2: #515151;   //h2-h6
+$black2: #515151;   // h2-h6
 $black3: #535353;   // paragahrap
 $black4: #686868;   // span
 $white-vanila: #ffffff;
-$white2: #F7F7F7;   //bg-section-latest
-$white3: #f1f1f1;
+$white2: #F7F7F7;   // bg-section-latest
+$white3: #f0f0f0;   // bg footer    
 
 // font
 $h-font: 'Source Serif Pro', serif;
@@ -18,6 +18,12 @@ $p-font: 'Roboto', sans-serif;
 
 
 // general
+body{
+    font-family: $p-font;
+    background-color: $white2;
+}
+
+// text
 h1{ // only header landing page
     font-size: 52px;
     font-family: $h-font;
@@ -82,30 +88,34 @@ p{ // paraghrap
     color: $black3; 
 }
 
-span{ // date artikel, categori
-    font-size: 16px;
+small{ // date artikel, categori
+    font-size: 14px;
     font-family: $p-font;
     font-weight: 400;
     color: $black4; 
 }
 
+.text-spacing{
+    letter-spacing: 0.5px;
+}
+
+// button
 .btn-red-primary{ // button home page
     margin-top: 55px;
-    color: $red-primary;
+    color: $red1;
     background-color: $white-vanila;
-    border: solid 1px $red-primary;
+    border: solid 1px $red1;
     border-radius: 20px;
     transition:  .2s ease-in-out;
 
     &:hover{
         color: $white-vanila;
-        background-color: $red-primary;
+        background-color: $red1;
     }
 }
 
-
 .btn-newsletter{ // buttin newsletter
-    background-color: $red-primary;
+    background-color: $red1;
     color: $white-vanila;
     
     &:hover{
@@ -114,7 +124,8 @@ span{ // date artikel, categori
     }
 }
 
-.card-articel{ 
+// card
+.card-articel{  // card articel home page
     width: 360px;
     padding: 20px;
     border-radius: 10px;
@@ -128,9 +139,10 @@ span{ // date artikel, categori
     }
 }
 
-// home page
 
-nav{ // navigasi
+// ------ home page ------
+// navigasi 
+nav{ 
     .container{
         .collapse{
             ul{
@@ -152,14 +164,14 @@ nav{ // navigasi
             }
             form{
                 .form-control{
-                    border: solid 1px 0 1px 1px $red-primary;
-                    border-color: $red-primary;
+                    border: solid 1px 0 1px 1px $red1;
+                    border-color: $red1;
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
                 }
                 .ic-search{
-                    background-color: $red-primary;
-                    border-color: $red-primary;
+                    background-color: $red1;
+                    border-color: $red1;
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
                 }
@@ -168,10 +180,15 @@ nav{ // navigasi
     }
 }
 
-.container-header{ // header
-    padding: 100px 12px;
-}
+// header
+header{
+    background-color: $white-vanila;
+    
+    .container-header{
+        padding: 100px 12px;
+    }
 
+}
 // main
 .section-articel-popular, .section-articel-latest{
     padding: 100px 12px;
@@ -182,7 +199,7 @@ nav{ // navigasi
     }
 
     a{
-        color: $red-primary;
+        color: $red1;
         text-decoration: none;
 
         &:hover{
@@ -198,21 +215,59 @@ nav{ // navigasi
 
 .section-newsletter{
     margin: 200px 0 150px;
+    margin-bottom: 100px;
     
     .container{
         padding: 30px;
-        background-color: $red-primary;
+        background-color: $red1;
         border-radius: 20px;
     }
 }
 
-
+// footer
 footer{
     width: 100%;
-    margin-top: 100px;
     padding-top: 100px;
     background-color: $white3;
     word-wrap: break-word;
+}
+
+
+// articel page
+// main
+.card-articel-content{
+    margin: 150px 0 100px;
+    padding: 30px;
+    border-radius: 10px;
+
+    .category-articel{
+        margin-bottom: 25px;
+
+        .img-ic-tag{
+            height: 14px;
+            margin-top: -7px;
+        }
+        a{
+            color: $black4;
+        }
+    }
+
+    .data-author{
+        margin-bottom: 40px;
+
+        .img-author{
+            width: 40px;
+        }
+    }
+    
+    .text-center{
+        margin-bottom: 40px;
+
+        a{
+            color: $black4;
+        }
+    }
+
 }
 
 

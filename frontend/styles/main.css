@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@400;600;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F7F7F7;
+}
+
 h1 {
   font-size: 52px;
   font-family: "Source Serif Pro", serif;
@@ -63,11 +68,15 @@ p {
   color: #535353;
 }
 
-span {
-  font-size: 16px;
+small {
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #686868;
+}
+
+.text-spacing {
+  letter-spacing: 0.5px;
 }
 
 .btn-red-primary {
@@ -137,7 +146,11 @@ nav .container .collapse form .ic-search {
   border-bottom-left-radius: 0;
 }
 
-.container-header {
+header {
+  background-color: #ffffff;
+}
+
+header .container-header {
   padding: 100px 12px;
 }
 
@@ -166,6 +179,7 @@ nav .container .collapse form .ic-search {
 
 .section-newsletter {
   margin: 200px 0 150px;
+  margin-bottom: 100px;
 }
 
 .section-newsletter .container {
@@ -176,9 +190,43 @@ nav .container .collapse form .ic-search {
 
 footer {
   width: 100%;
-  margin-top: 100px;
   padding-top: 100px;
-  background-color: #f1f1f1;
+  background-color: #f0f0f0;
   word-wrap: break-word;
+}
+
+.card-articel-content {
+  margin: 150px 0 100px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card-articel-content .category-articel {
+  margin-bottom: 25px;
+}
+
+.card-articel-content .category-articel .img-ic-tag {
+  height: 14px;
+  margin-top: -7px;
+}
+
+.card-articel-content .category-articel a {
+  color: #686868;
+}
+
+.card-articel-content .data-author {
+  margin-bottom: 40px;
+}
+
+.card-articel-content .data-author .img-author {
+  width: 40px;
+}
+
+.card-articel-content .text-center {
+  margin-bottom: 40px;
+}
+
+.card-articel-content .text-center a {
+  color: #686868;
 }
 /*# sourceMappingURL=main.css.map */
