@@ -1,0 +1,222 @@
+// fonts url
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
+// color
+$red-primary: #FF2946;
+$red-secondary: #ff3a54;
+$black1: #343434;   // h1
+$black2: #515151;   //h2-h6
+$black3: #535353;   // paragahrap
+$black4: #686868;   // span
+$white-vanila: #ffffff;
+$white2: #F7F7F7;   //bg-section-latest
+$white3: #f1f1f1;
+
+// font
+$h-font: 'Source Serif Pro', serif;
+$p-font: 'Roboto', sans-serif;
+
+
+// general
+h1{ // only header landing page
+    font-size: 52px;
+    font-family: $h-font;
+    font-weight: 600;
+    color: $black1;
+}
+
+h2{ // title artikel
+    font-size: 38px;
+    font-family: $h-font;
+    font-weight: 600;
+    color: $black1;
+}
+
+h3{ // title section
+    font-size: 32px;
+    font-family: $h-font;
+    font-weight: 400;
+    color: $black2;
+}
+
+h4{ 
+    font-size: 26px;
+    font-family: $h-font;
+    font-weight: 400;
+    color: $black2;
+}
+
+h5{ // card title
+    font-size: 20px;
+    font-family: $p-font;
+    font-weight: 400;
+    color: $black2;
+}
+
+h6{ 
+    font-size: 16px;
+    font-family: $h-font;
+    font-weight: 400;
+    color: $black2;
+}
+
+.h6-sub{ 
+    font-size: 16px;
+    font-family: $p-font;
+    font-weight: 400;
+    color: $black3;
+}
+
+p{ // paraghrap
+    font-size: 18px;
+    line-height: 32px;
+    font-family: $p-font;
+    font-weight: 300;
+    color: $black3; 
+}
+
+.p-sub{ // text under section title, name author
+    font-size: 18px;
+    font-family: $p-font;
+    font-weight: 400;
+    color: $black3; 
+}
+
+span{ // date artikel, categori
+    font-size: 16px;
+    font-family: $p-font;
+    font-weight: 400;
+    color: $black4; 
+}
+
+.btn-red-primary{ // button home page
+    margin-top: 55px;
+    color: $red-primary;
+    background-color: $white-vanila;
+    border: solid 1px $red-primary;
+    border-radius: 20px;
+    transition:  .2s ease-in-out;
+
+    &:hover{
+        color: $white-vanila;
+        background-color: $red-primary;
+    }
+}
+
+
+.btn-newsletter{ // buttin newsletter
+    background-color: $red-primary;
+    color: $white-vanila;
+    
+    &:hover{
+        background-color: $red-secondary;
+        color: $white-vanila; 
+    }
+}
+
+.card-articel{ 
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+
+    .card-title{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        height: 38px;
+    }
+}
+
+// home page
+
+nav{ // navigasi
+    .container{
+        .collapse{
+            ul{
+                li{
+                    .nav-link {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $black2;
+                        margin-right: 35px; 
+        
+                        &:hover {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: $black1;
+                        }
+                    }
+                }
+                
+            }
+            form{
+                .form-control{
+                    border: solid 1px 0 1px 1px $red-primary;
+                    border-color: $red-primary;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                .ic-search{
+                    background-color: $red-primary;
+                    border-color: $red-primary;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+    }
+}
+
+.container-header{ // header
+    padding: 100px 12px;
+}
+
+// main
+.section-articel-popular, .section-articel-latest{
+    padding: 100px 12px;
+    background-color: $white2;
+
+    .row{
+        margin: 50px 0;
+    }
+
+    a{
+        color: $red-primary;
+        text-decoration: none;
+
+        &:hover{
+            color: $red-secondary;
+            text-decoration: underline;
+        }
+    }
+}
+
+.section-articel-latest{
+    background-color: $white-vanila;
+}
+
+.section-newsletter{
+    margin: 200px 0 150px;
+    
+    .container{
+        padding: 30px;
+        background-color: $red-primary;
+        border-radius: 20px;
+    }
+}
+
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 100px;
+    background-color: $white3;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
