@@ -1,5 +1,6 @@
 // fonts url
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+// end fonts url
 
 // color
 $red1: #FF2946;
@@ -10,12 +11,13 @@ $black3: #535353;   // paragahrap
 $black4: #686868;   // span
 $white-vanila: #ffffff;
 $white2: #F7F7F7;   // bg-section-latest
-$white3: #f0f0f0;   // bg footer    
+$white3: #f0f0f0;   // bg footer 
+// end color
 
 // font
 $h-font: 'Source Serif Pro', serif;
 $p-font: 'Roboto', sans-serif;
-
+// end font
 
 // general
 body{
@@ -23,7 +25,6 @@ body{
     background-color: $white2;
 }
 
-// text
 h1{ // only header landing page
     font-size: 52px;
     font-family: $h-font;
@@ -45,21 +46,21 @@ h3{ // title section
     color: $black2;
 }
 
-h4{ 
+h4{ // title sidebar articelpage
     font-size: 26px;
     font-family: $h-font;
     font-weight: 400;
     color: $black2;
 }
 
-h5{ // card title
+h5{ // title footer item
     font-size: 20px;
     font-family: $p-font;
     font-weight: 400;
     color: $black2;
 }
 
-h6{ 
+h6{ // card title
     font-size: 16px;
     font-family: $h-font;
     font-weight: 400;
@@ -88,7 +89,7 @@ p{ // paraghrap
     color: $black3; 
 }
 
-.p-sub-secondary{
+.p-sub-secondary{ // text label form input
     font-size: 16px;
     font-family: $p-font;
     font-weight: 400;
@@ -102,11 +103,10 @@ small{ // date artikel, categori
     color: $black4; 
 }
 
-.text-spacing{
+.text-spacing{ // set spacing word
     letter-spacing: 0.5px;
 }
 
-// button
 .btn-red-primary{ // button home page
     margin-top: 55px;
     color: $red1;
@@ -121,7 +121,7 @@ small{ // date artikel, categori
     }
 }
 
-.btn-newsletter{ // buttin newsletter
+.btn-newsletter{ // button newsletter
     background-color: $red1;
     color: $white-vanila;
     
@@ -131,7 +131,6 @@ small{ // date artikel, categori
     }
 }
 
-// card
 .card-articel{  // card articel home page
     width: 360px;
     padding: 20px;
@@ -145,6 +144,9 @@ small{ // date artikel, categori
         height: 38px;
     }
 }
+// end general
+
+
 
 
 // ------ home page ------
@@ -186,6 +188,7 @@ nav{
         }
     }
 }
+// end navigasi
 
 // header
 header{
@@ -196,6 +199,8 @@ header{
     }
 
 }
+// end header
+
 // main
 .section-articel-popular, .section-articel-latest{
     padding: 100px 12px;
@@ -230,17 +235,21 @@ header{
         border-radius: 20px;
     }
 }
+// end main
 
 // footer
 footer{
-    width: 100%;
     padding-top: 100px;
     background-color: $white3;
     word-wrap: break-word;
 }
+// end footer
+// ------ end home page ------
 
 
-// articel page
+
+
+// ------ articel page ------
 // main
 .card-articel-content{
     margin: 150px 0 100px;
@@ -275,7 +284,7 @@ footer{
     }
 }
 
-.card-margin{
+.card-margin{ // ghost card
     margin-top: 660px;
 }
 
@@ -298,6 +307,8 @@ footer{
         margin-left: 56px;
     }
 }
+// end main
+// ------ end articel page ------
 
 
 
