@@ -88,6 +88,13 @@ p{ // paraghrap
     color: $black3; 
 }
 
+.p-sub-secondary{
+    font-size: 16px;
+    font-family: $p-font;
+    font-weight: 400;
+    color: $black4; 
+}
+
 small{ // date artikel, categori
     font-size: 14px;
     font-family: $p-font;
@@ -262,13 +269,36 @@ footer{
     
     .text-center{
         margin-bottom: 40px;
-
         a{
             color: $black4;
         }
     }
-
 }
+
+.card-margin{
+    margin-top: 660px;
+}
+
+.card-articel-sidebar{
+    padding: 30px;
+    border-radius: 10px;
+
+    
+    .hr-title{
+        height: 4px;
+        color: $red1;
+    }
+
+
+    .img-card-sidebar{
+        width: 40px;
+        height: 40px;
+    }
+    small{
+        margin-left: 56px;
+    }
+}
+
 
 
 
