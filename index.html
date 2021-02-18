@@ -15,7 +15,7 @@
 <body>
 
     <!-- Navigasi -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="frontend/images/logo-nt.png" alt="img-logo">
@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link px-0" href="#">Home</a>
+                        <a class="nav-link px-0" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-0" href="#articel-popular">Artikel</a>
+                        <a class="nav-link px-0" href="articel-page-all.html">Artikel</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-0" href="#">About Us</a>
+                    <li>
+                        <a href="#" class="nav-link px-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Newsletter</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -44,6 +44,27 @@
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h4 class="modal-title" id="exampleModalLabel">Join Newsletter Now!</h4> -->
+                <img src="frontend/images/logo-nt-footer.png" alt="logo Neovasi" class="d-block">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="mb-4">
+                        <label for="inputEmail" class="form-label p-sub mt-3">Dapatkan informasi terbaru dari kami!</label>
+                        <div class="d-flex">
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Masukkan email anda">
+                            <button type="submit" class="btn btn-newsletter text-spacing ms-2">Daftar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- header -->
     <header>
@@ -230,8 +251,8 @@
             <div class="row d-flex justif">
                 <!-- newsletter  -->
                 <div class="col-sm-12 col-lg-4 px-4 mb-5">
+                    <img src="frontend/images/logo-nt-footer.png" alt="logo Neovasi" class="d-block">
                     <form action="#">
-                        <img src="frontend/images/logo-nt-footer.png" alt="logo Neovasi" class="d-block">
                         <label for="inputEmail" class="form-label p-sub mt-3">Dapatkan informasi terbaru dari kami!</label>
                         <div class="d-flex">
                             <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Masukkan email anda">
