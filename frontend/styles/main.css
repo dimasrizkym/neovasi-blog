@@ -282,4 +282,14 @@ footer {
 .section-all-articel .row {
   margin-bottom: 50px;
 }
+
+.container-profile {
+  padding: 50px 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.container-profile .img-author {
+  width: 240px;
+}
 /*# sourceMappingURL=main.css.map */
