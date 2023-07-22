@@ -66,6 +66,10 @@ h6{ // card title
 	font-family: $h-font;
 	font-weight: 400;
 	color: $black2;
+	display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 .h6-sub{ 
